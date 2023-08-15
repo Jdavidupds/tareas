@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Página de Fútbol</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0f0f0f;
+            color: rgb(241, 235, 235);
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #ebe1e1;
+            color: rgb(17, 16, 16);
+            padding: 5px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav li {
+            margin: 0 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        main {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Futbol bolivia</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Equipos</a></li>
+            <li><a href="#">Calendario</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav> 
+    <main>
+        <h2>Últimas Noticias</h2>
+        <p>¡Bienvenidos a nuestra página de fútbol! Aquí encontrarás las últimas noticias, información sobre los equipos
+            y el calendario de los partidos.</p>
+            <img src="img/messi.png.webp" alt="Descripción de la imagen" style="width: 200px; height: auto;">
+    
+        <h2>Contacto</h2>
+        <form action="/enviar" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+    
+            <input type="submit" value="Enviar">
+           
+            
+        </form>
+    </main>
+    
+    
+    
+    
+    
+    <footer>
+        <p>&copy; 2023 Página de Fútbol. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
